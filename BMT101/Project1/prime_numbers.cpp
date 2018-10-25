@@ -1,6 +1,6 @@
 /*
  * Author: Nuri Melih Şensoy
- * A program that finds prime numbers between 10-100 and check digits is single
+ * A program that finds prime numbers between 10-100 and check digits are single
  *
 */
 

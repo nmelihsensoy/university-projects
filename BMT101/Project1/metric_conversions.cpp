@@ -19,7 +19,7 @@ int main(){
     cout << "2 - CM\n";
     cout << "3 - DM\n";
     cout << "4 - DAM\n";
-    cout << "5 - HM\n";\n
+    cout << "5 - HM\n";
     cout << "6 - KM\n";
     cin >> userChoice;
 
