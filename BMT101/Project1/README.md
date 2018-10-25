@@ -1,3 +1,3 @@
 ### [BMT101](/BMT101)
-- [Project 1](/bmt101/project1) `C++`
+- [Project 1](/BMT101/Project1) `C++`
 
