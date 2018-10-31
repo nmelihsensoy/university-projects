@@ -1,0 +1,27 @@
+Function Main
+    Declare Integer i
+    Declare Boolean prime
+    Declare Integer firstDigit
+    Declare Integer secondDigit
+    Declare Integer specificCounter
+    
+    Assign specificCounter = 0
+    For i = 10 to 100
+        Declare Integer a
+        
+        Assign prime = true
+        For a = 2 to i-1
+            If i % a == 0
+                Assign prime = false
+            End
+        End
+        If prime == true
+            Assign firstDigit = i / 10
+            Assign secondDigit = i % 10
+            If firstDigit %2 != 0 && secondDigit %2 != 0
+                Assign specificCounter = specificCounter + 1
+            End
+        End
+    End
+    Output specificCounter
+End

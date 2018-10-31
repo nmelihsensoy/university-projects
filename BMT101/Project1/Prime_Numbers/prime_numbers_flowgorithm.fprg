@@ -1,0 +1,48 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="2.11">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="melih"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2018-11-01 12:25:40 &#214;&#214;"/>
+        <attribute name="created" value="bWVsaWg7REVTS1RPUC1EMzlRUTZNOzIwMTgtMTAtMzE7MTE6NDg6MzYgw5ZTOzMwMDI="/>
+        <attribute name="edited" value="bWVsaWg7REVTS1RPUC1EMzlRUTZNOzIwMTgtMTEtMDE7MTI6MjU6NDAgw5bDljsxOzMyMzA="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="i" type="Integer" array="False" size=""/>
+            <declare name="prime" type="Boolean" array="False" size=""/>
+            <declare name="firstDigit" type="Integer" array="False" size=""/>
+            <declare name="secondDigit" type="Integer" array="False" size=""/>
+            <declare name="specificCounter" type="Integer" array="False" size=""/>
+            <assign variable="specificCounter" expression="0"/>
+            <for variable="i" start="10" end="100" direction="inc" step="1">
+                <declare name="a" type="Integer" array="False" size=""/>
+                <assign variable="prime" expression="true"/>
+                <for variable="a" start="2" end="i-1" direction="inc" step="1">
+                    <if expression="i % a == 0">
+                        <then>
+                            <assign variable="prime" expression="false"/>
+                        </then>
+                        <else/>
+                    </if>
+                </for>
+                <if expression="prime == true">
+                    <then>
+                        <assign variable="firstDigit" expression="i / 10"/>
+                        <assign variable="secondDigit" expression="i % 10"/>
+                        <if expression="firstDigit %2 != 0 &amp;&amp; secondDigit %2 != 0">
+                            <then>
+                                <assign variable="specificCounter" expression="specificCounter + 1"/>
+                            </then>
+                            <else/>
+                        </if>
+                    </then>
+                    <else/>
+                </if>
+            </for>
+            <output expression="specificCounter" newline="True"/>
+        </body>
+    </function>
+</flowgorithm>
