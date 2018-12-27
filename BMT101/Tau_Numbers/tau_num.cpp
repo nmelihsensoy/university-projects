@@ -1,6 +1,6 @@
 /*
  * Author: Nuri Melih Sensoy
- * Finds Tau Numbers Numbers between 1000-9999
+ * Finds Tau Numbers between 1000-9999
  *
 */
 #include<iostream>
