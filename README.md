@@ -7,3 +7,5 @@
 - [Password Security Level](/BMT101/Pass_Security_Level) `Quiz` `C++`
 - [Draw Rhombus](/BMT101/Draw_Rhombus) `Quiz` `C++`
 - [Draw Rhombus 2](/BMT101/Draw_Rhombus_2) `Quiz` `C++`
+- [Armstrong and Faktorion Numbers](/BMT101/Armstrong_Faktorion_Numbers) `Quiz` `C++`
+- [Tau Numbers](/BMT101/Tau_Numbers) `Quiz` `C++`
