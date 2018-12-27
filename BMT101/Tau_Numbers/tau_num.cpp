@@ -14,7 +14,7 @@ bool isTauNumber(int number){
 		}
 	}
 	
-	if(sayi%counter == 0){
+	if(number%counter == 0){
 		return true;
 	}
 	
