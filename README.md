@@ -10,6 +10,10 @@
 - [Armstrong and Faktorion Numbers](/BMT101/Armstrong_Faktorion_Numbers) `Quiz` `C++`
 - [Tau Numbers](/BMT101/Tau_Numbers) `Quiz` `C++`
 - [Fibonacci Numbers](/BMT101/Fibonacci_Numbers) `Exam` `C++`
+- [Biggest Lowest Digit](/BMT101/Biggest_Lowest_Digit) `Exam` `C++`
+
+
+
 
 
 
