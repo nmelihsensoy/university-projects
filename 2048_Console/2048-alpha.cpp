@@ -1,5 +1,5 @@
 #include <iostream>
-#include <math.h>
+#include <time.h>
 using namespace std;
 
 int main(){
@@ -29,7 +29,7 @@ int main(){
     //Game
     char menu;
     while(menu != 'q'){
-        int moveDirI, moveDirJ;
+        int moveDirI=1, moveDirJ=1;
 
         switch(menu){
             case 'w' :
