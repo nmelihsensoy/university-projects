@@ -1,6 +1,17 @@
 #include <iostream>
 #include <time.h>
+#include <stdlib.h>
 using namespace std;
+
+int countDigit(int number){
+	int i=0;
+	do{
+		number = number/10;
+		i++;
+	}while(number > 0);
+	
+	return i;
+}
 
 int main(){
     //Random
@@ -29,12 +40,14 @@ int main(){
     //Game
     char menu;
     while(menu != 'q'){
-        int moveDirI=1, moveDirJ=1;
+    	system("cls");
+        int moveDirI=1, moveDirJ=1, startLine=0;
 
         switch(menu){
             case 'w' :
                 moveDirI = -1;
                 moveDirJ = 0;
+                startLine=3;
             break;
             case 'a' :
                 moveDirI = 0;
@@ -51,41 +64,73 @@ int main(){
         }
 
         //do movement
-        for(int i=0; i>=0 and i<4; i++){
-                    for(int j=0; j>=0 and j<4; j++){
-                            int newI = i + moveDirI;
-                            int newJ = j + moveDirJ;
-                            bool move = true;
-
-                            if(newI <0 or newJ < 0 or newI >= 4 or newJ >=4 or 
-                            matrix[i][j] != matrix[newI][newJ] and matrix[newI][newJ] !=0){
-                                move = false;
-                            }
-                            
-                            if(move == true){
-                                matrix[newI][newJ] += matrix[i][j];
-                                matrix[i][j] = 0;
-                            }       
-                        }
-                }
-
+        bool possible;
+		bool newTile = false;	
+        do{
+        	possible = false;
+			for(int i=0; i>=0 and i<4; i++){
+			        for(int j=0; j>=0 and j<4; j++){
+						int newI = i + moveDirI;
+						int newJ = j + moveDirJ;
+						bool move = true;
+						
+						if(newI <0 or newJ < 0 or newI >= 4 or newJ >=4 or 
+							matrix[i][j] != matrix[newI][newJ] and matrix[newI][newJ] !=0){
+							move = false;
+						}
+						
+						if(move == true and matrix[i][j] != 0){
+							matrix[newI][newJ] += matrix[i][j];
+							matrix[i][j] = 0;
+							possible = true;
+							newTile = true;
+						}
+			        }
+			    }
+	    }while(possible);
+	    
+	    //Add new tile after move
+	    int randomXGame;
+	    int randomYGame;
+		if(newTile and menu != '\0'){
+			do{
+				randomXGame = rand()%4;
+				randomYGame = rand()%4;
+				if(matrix[randomXGame][randomYGame] == 0){
+					matrix[randomXGame][randomYGame] = twoFour[rand()%2];
+				}					
+			}while(matrix[randomXGame][randomYGame] == 0);
+			
+		}
+		
         //Print Matrix
-        cout<<"-------"<<endl;
         for(int i=0; i<4; i++){
             for(int j=0; j<4; j++){
                     if(matrix[i][j] == 0)
-                        cout<<"0 ";
-                    else
-                        cout<<matrix[i][j]<<" ";
+                        cout<<"0   ";
+                    else{
+                    	cout<<matrix[i][j];
+                    	int dig = countDigit(matrix[i][j]);
+                    	if(dig == 1){
+                    		cout<< "   ";
+						}else if(dig == 2){
+							cout<< "  ";
+						}else if(dig == 3){
+							cout<< " ";
+						}else if(dig == 4){
+							cout<< "";
+						}
+					}
+                    	          
                 }
             cout<<endl;
         }
-        cout<<"-------"<<endl;
         
         //get menu selection
-        cout<<score<<" ";
-        cout<<"sec: ";
+        cout<<"Controls: w,a,s,d // write and enter"<<endl;
+        cout<<"Your Move: ";
         cin>>menu;
+               
     }
         
             
