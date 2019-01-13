@@ -1,3 +1,8 @@
+/*
+ * Author: Nuri Melih Sensoy
+ * 2048 clone in console
+ *
+*/
 #include <iostream>
 #include <time.h>
 #include <stdlib.h>
@@ -19,7 +24,6 @@ int main(){
     int twoFour[2] = {2, 4};
 
     //init matrix
-    int score = 0;
     int matrix[4][4];
     for(int i=0; i<4; i++){
         for(int j=0; j<4; j++){
@@ -38,16 +42,17 @@ int main(){
 
 
     //Game
+    int score = 0;
     char menu;
     while(menu != 'q'){
     	system("cls");
-        int moveDirI=1, moveDirJ=1, startLine=0;
+    	score = 0;
+        int moveDirI=1, moveDirJ=1;
 
         switch(menu){
             case 'w' :
                 moveDirI = -1;
                 moveDirJ = 0;
-                startLine=3;
             break;
             case 'a' :
                 moveDirI = 0;
@@ -89,7 +94,7 @@ int main(){
 			    }
 	    }while(possible);
 	    
-	    //Add new tile after move
+	    //add new tile after move
 	    int randomXGame;
 	    int randomYGame;
 		if(newTile and menu != '\0'){
@@ -103,11 +108,12 @@ int main(){
 			
 		}
 		
-        //Print Matrix
+        //print Matrix
         for(int i=0; i<4; i++){
             for(int j=0; j<4; j++){
+            		score += matrix[i][j];
                     if(matrix[i][j] == 0)
-                        cout<<"0   ";
+                        cout<<".   ";
                     else{
                     	cout<<matrix[i][j];
                     	int dig = countDigit(matrix[i][j]);
@@ -125,9 +131,11 @@ int main(){
                 }
             cout<<endl;
         }
-        
+          		
         //get menu selection
-        cout<<"Controls: w,a,s,d // write and enter"<<endl;
+        cout<<endl;
+        cout<<"Score: "<<score<<endl;
+        cout<<"Controls: w,a,s,d // q: exit -> Write and enter "<<endl;
         cout<<"Your Move: ";
         cin>>menu;
                
