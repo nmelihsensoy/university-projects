@@ -8,6 +8,12 @@
 #include <stdlib.h>
 using namespace std;
 
+#ifdef _WIN32
+#define CLEAR "cls"
+#else
+#define CLEAR "clear"
+#endif
+
 int countDigit(int number){
 	int i=0;
 	do{
@@ -45,7 +51,7 @@ int main(){
     int score = 0;
     char menu;
     while(menu != 'q'){
-    	system("cls");
+    	system(CLEAR);
     	score = 0;
         int moveDirI=1, moveDirJ=1;
 
