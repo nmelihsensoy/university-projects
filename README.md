@@ -1,7 +1,8 @@
 # My University Projects
 
 - [2048 Game](/2048_Console) `C++` `Console`
-- [XOX Game](/XOX_Console) `C++` `Console`
+- [Tic Tac Toe(XOX) Game](/XOX_Console) `C++` `Console`
+- [Snake Game](/Snake_Console) `C++` `Console`
 
 ### [BMT101](/BMT101)
 - [Metric Conversion](/BMT101/Metric_Conversion) `C++` `Console`
