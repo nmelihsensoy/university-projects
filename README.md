@@ -17,7 +17,8 @@
 - [Biggest Lowest Digit](/BMT101/Biggest_Lowest_Digit) `Exam` `C++` `Console`
 - [Palindrome Numbers](/BMT101/Palindrome_Numbers)  `C++` `Console`
 
-
+### [BMT106](/BMT106)
+- [Resistor Code Calculator](/BMT106/Resistor_Code_Calculator) `C++` `Console`
 
 
 
