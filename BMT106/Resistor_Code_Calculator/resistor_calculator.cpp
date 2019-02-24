@@ -10,14 +10,23 @@
 #include <math.h> //pow
 using namespace std;
 
+//Cross platform clear command
+//not necessary
+#ifdef _WIN32
+#define CLEAR "cls"
+#else
+#define CLEAR "clear"
+#endif
+
 char resistor[6];
 double toleranceValue[10] = {1, 2, 3, 4, 0.5, 0.25, 0.10, 0.05, 5, 10};
-char menuText[256] = " 0 - Siyah \n 1 - Kahverengi\n 2 - Kırmızı\n 3 - Turuncu\n 4 - Sari\n 5 - Yesil\n 6 - Mavi\n 7 - Mor\n 8 - Gri\n 9 - Beyaz\n A - Altin\n G - Gumus\n ";
+char menuText[256] = " 0 - Siyah \n 1 - Kahverengi\n 2 - Kirmizi\n 3 - Turuncu\n 4 - Sari\n 5 - Yesil\n 6 - Mavi\n 7 - Mor\n 8 - Gri\n 9 - Beyaz\n A - Altin\n G - Gumus\n ";
 
 //Resistor input handling
 //just getting the input and set resistor array value to received colors id
 void resInput(int band){
     for(int i=0; i<band; i++){
+        system(CLEAR); //for better look
         char bandChoice;
         cout<<"######################"<<endl;
         cout<<menuText;
@@ -29,6 +38,14 @@ void resInput(int band){
     }
 }
 
+//Prints calculation
+void printResult(double value, double tolerance){
+    cout<<endl;
+    cout<<"Deger: "<<value<<" Ohm - "<< value/1000 <<"kOhm"<<endl;
+    cout<<value-(value*tolerance)/100<<" Ohm - "<<value+(value*tolerance)/100<<" Ohm arasında"<<endl;
+    cout<<endl;
+}
+
 //Multiplier and Tolerance Char Handling
 //mode 0: tolerance, 1 = multiplier
 double charHandling(char c, int mode){
@@ -36,16 +53,16 @@ double charHandling(char c, int mode){
 
     if(mode == 0){
         //'A' for gold and 'G' for silver handling
-        if(toInt==17) //A
+        if(toInt == 17) //A
             toInt -= 9; //17-9 = 8, means 8. element of toleransValue array
         else if(toInt == 23) //G
             toInt -= 14;//23-14 = 9, means 9. element of toleransValue array
 
     }else if(mode == 1){
         //'A' for gold and 'G' for silver handling
-        if(toInt==17) //A
+        if(toInt == 17) //A
             toInt = pow(10, -1);
-        else if(toInt==23) //G
+        else if(toInt == 23) //G
             toInt = pow(10, -2); 
         else
             toInt = pow(10, toInt);
@@ -65,34 +82,24 @@ void resistorCalc(int band){
     resInput(band); //Getting the input
 
     if(band == 4){
-        multiplier = charHandling(resistor[2], 1);
-        number = (resistor[0]-'0')*10 + resistor[1]-'0'; 
-        tolerance = charHandling(resistor[3], 0);
+        multiplier = charHandling(resistor[2], 1); //third digit is multiplier
+        number = (resistor[0]-'0')*10 + resistor[1]-'0'; //first 2 digit for 4 band
+        tolerance = charHandling(resistor[3], 0); //fourth digit is tolerance band
 
     }else if(band == 5){
-        multiplier = charHandling(resistor[3], 1);
-        number = (resistor[0]-'0')*100 + (resistor[1]-'0')*10 + resistor[2]-'0'; 
-        tolerance = charHandling(resistor[4], 0);
+        multiplier = charHandling(resistor[3], 1); //fourth digit is multiplier
+        number = (resistor[0]-'0')*100 + (resistor[1]-'0')*10 + resistor[2]-'0'; //first 3 digit for 4 band
+        tolerance = charHandling(resistor[4], 0); //fifth digit is tolerance band
     }
 
     value = number*multiplier;
-
-    cout<<endl;
-    /*for debugging
-     cout<<"Multiplier: "<<carpan<<endl;
-     cout<<"Number: "<<number<<endl;
-     cout<<"Tolerance: "<<tolerans<<endl;
-    */
-    cout<<"Deger: "<<value<<" Ω"<<endl;
-    cout<<value-value*toleranceValue[tolerance]/100<<"R - "<<value+value*toleranceValue[tolerance]/100<<"R arasında"<<endl;
-    cout<<endl;
+    printResult(value, toleranceValue[tolerance]);
 }   
 
 void userMenu(){
     int choice;
-    cout<<"Direnc Kac band: ";
+    cout<<"Direnc Kac band(4-5): ";
     cin>>choice;
-
     switch(choice){
         case 4:
             resistorCalc(4);
@@ -105,12 +112,12 @@ void userMenu(){
 
 int main(){
     char wantContinue;
-
     while(wantContinue != 'h'){
         userMenu();
 
         cout<<"Devam etmek ister misiniz?(e/h) "<<endl;
         cin>>wantContinue;
+        system(CLEAR); //for better look
     }
 
     return 0;
