@@ -25,24 +25,34 @@ char menuText[256] = " 0 - Siyah \n 1 - Kahverengi\n 2 - Kirmizi\n 3 - Turuncu\n
 //Resistor input handling
 //just getting the input and set resistor array value to received colors id
 void resInput(int band){
+    char bandChoice;
+    bool isValid = true;
     for(int i=0; i<band; i++){
         system(CLEAR); //for better look
-        char bandChoice;
         cout<<"######################"<<endl;
         cout<<menuText;
         cout<<"######################"<<endl;
+        if(!isValid)
+            cout<<"Gecersiz deger girdiniz."<<endl;
+    
         cout<<i+1<<". bandin rengi: ";
         cin>>bandChoice;
 
-        resistor[i] = bandChoice;
+        if((((int)bandChoice>=48) && ((int)bandChoice<=57)) || (bandChoice == 'A') || (bandChoice == 'G')){
+            resistor[i] = bandChoice;
+            isValid = true;
+        }else{
+            isValid = false;
+            i--;
+        }
     }
 }
 
 //Prints calculation
 void printResult(double value, double tolerance){
     cout<<endl;
-    cout<<"Deger: "<<value<<" Ohm - "<< value/1000 <<"kOhm"<<endl;
-    cout<<value-(value*tolerance)/100<<" Ohm - "<<value+(value*tolerance)/100<<" Ohm arasında"<<endl;
+    cout<<value<<" Ohm = "<< value/1000 <<"kOhm"<<" %"<<tolerance<<" tolerans"<<endl;
+    cout<<value-(value*tolerance)/100<<" Ohm - "<<value+(value*tolerance)/100<<" Ohm araliginda"<<endl;
     cout<<endl;
 }
 
@@ -54,9 +64,9 @@ double charHandling(char c, int mode){
     if(mode == 0){
         //'A' for gold and 'G' for silver handling
         if(toInt == 17) //A
-            toInt -= 9; //17-9 = 8, means 8. element of toleransValue array
+            toInt -= 9; //17-9 = 8, means 8. element of toleranceValue array
         else if(toInt == 23) //G
-            toInt -= 14;//23-14 = 9, means 9. element of toleransValue array
+            toInt -= 14;//23-14 = 9, means 9. element of toleranceValue array
 
     }else if(mode == 1){
         //'A' for gold and 'G' for silver handling
@@ -107,6 +117,9 @@ void userMenu(){
         case 5:
             resistorCalc(5);
         break;
+        default:
+            cout<<"Gecersiz deger girdiniz."<<endl;
+        break;
     }
 }
 
@@ -115,7 +128,7 @@ int main(){
     while(wantContinue != 'h'){
         userMenu();
 
-        cout<<"Devam etmek ister misiniz?(e/h) "<<endl;
+        cout<<"Devam etmek ister misiniz?(*/h) "<<endl;
         cin>>wantContinue;
         system(CLEAR); //for better look
     }
