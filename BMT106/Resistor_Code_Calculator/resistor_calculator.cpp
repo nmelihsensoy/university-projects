@@ -39,12 +39,20 @@ void resInput(int band){
         cin>>bandChoice;
 
         if((((int)bandChoice>=48) && ((int)bandChoice<=57)) || (bandChoice == 'A') || (bandChoice == 'G')){
-            resistor[i] = bandChoice;
-            isValid = true;
+            if(((band==4) && (i!=3)) && ((bandChoice == 'A') || (bandChoice == 'G'))){
+                isValid = false;
+            }else if(((band==5) && (i!=4)) && ((bandChoice == 'A') || (bandChoice == 'G'))){
+                isValid = false;
+            }else{
+                resistor[i] = bandChoice;
+                isValid = true;
+            }         
         }else{
             isValid = false;
+        }    
+
+        if(!isValid)
             i--;
-        }
     }
 }
 
