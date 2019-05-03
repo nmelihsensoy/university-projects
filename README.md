@@ -22,6 +22,6 @@
 - [Recursive Functions](/BMT106/Recursive_Functions) `C++` `Console`
 - [GCD LCM Calculator](/BMT106/GCD_LCM_Calculator) `C++` `Console`
 - [Sentence Word Counter](/BMT106/Sentence_Word_Counter) `Exam` `C++` `Console`
-
+- [Operator Overloading](/BMT106/Operator_Overloading) `Quiz` `C++` `Console`
 
 
