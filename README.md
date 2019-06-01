@@ -24,5 +24,5 @@
 - [Sentence Word Counter](/BMT106/Sentence_Word_Counter) `Exam` `C++` `Console`
 - [Operator Overloading](/BMT106/Operator_Overloading) `Quiz` `C++` `Console`
 - [OOP Basics](/BMT106/OOP_Basics) `Quiz` `C++` `Console`
-
+- [Shuttle Automation](/BMT106/Shuttle_Automation) `Project` `C++` `Console`
 
