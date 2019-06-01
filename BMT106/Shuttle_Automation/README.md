@@ -1,10 +1,10 @@
-#Shuttle Automation
+# Shuttle Automation
 
 **A shuttle service automation software for companies. All code comments, class-variable-function names are written in English. All the text below there are written in Turkish.Maybe i write them in English too.**
 
 Bir şirket için personal servis otomasyonu yazılımı.
 
-##Rapor
+## Rapor
 Projemi C++ dilinde Nesne Yönelimli Programlama paradigması kullanan bir konsol uygulaması olarak yazdım.Toplamla 4 tane sınıf kullandım.Bu sınıflardan '**AddListSearch**' sınıfı sadece dosya için satır ekleme, arama ve listeleme işlemlerini yapar. '**DeleteUpdate**' sınıfı dosya için satır silme ve güncelleme işlemlerini yapar. 
 
 Projemdeki en önemli sınıf olan '**FileDb**' sınıfı ise üstte bahsettiğim 2 sınıftan miras alır. Listelenen satırların bölümlere parçalanması, verilerin dosyaya yazılabilir hale getirilmesi ve yazılması, parçalanan verilerin görsel olarak iyi ve anlışılabilir hale getirilmesi, 
@@ -12,24 +12,24 @@ kullanıcı girdilerinin alınması, kullanılması ve şimdi bahsedeceğim filt
 
 '**CustomFilters**' sınıfı ile tablodaki verileri sınıf içerisinde veya dosyada herhangi bir değişiklik yapmadan manipule etmeyi amaçladım. Yani tabloda satır-sütün değerlerine, tablodaki değerin ne olduğuna göre görsel değişiklikler yapabiliyorum.Örneğin dosyada 1 olarak yazılan veriyi tabloda 'Açık' olarak, 0 olan veriyi 'Kapalı' olarak yazdırma.2 veya daha fazla tabloyu birbirine satır numarasına göre bağlama.Tablodaki bütün verilerdeki boşluk karakterini silme ve benzeri işlemleri bu sınıf ile yapabiliyorum.
 
-##Dokümantasyon
+## Dokümantasyon
 Projede kullandığım sınıfların değişkenleri ve fonksiyonların neler olduğu ve ne iş yaptıklarını kısa cümleler ile burada belirttim.
 
-##AddListSearch Sınıfı
-|||
+## AddListSearch Sınıfı
+|  |  |
 | ------------ | ------------ |
-|  **Miras Aldığı Sınıflar: ** | Yok |
-| **Yapıcı Fonksiyonları: **  | Yok  |
-| **Yıkıcı Fonksiyonları: **   | Yok |
+| **Miras Aldığı Sınıflar:** | Yok |
+| **Yapıcı Fonksiyonları:**  | Yok  |
+| **Yıkıcı Fonksiyonları:**   | Yok |
 
-###Değişkenler
+### Değişkenler
 |Erişim | Tip  | İsim | Açıklama  |
 |------------ | ------------ | ------------ | ------------ |
 | protected | *string*  | ***fileName***  | Veritabanı dosyasının adını saklar.  |
 | protected |  *string* | **tempFileName**  | Geçici dosyanın adını saklar.  |
 | protected |  *int* |  **dataCount** | Veri sayısını saklar.  |
 
-###Fonksiyonlar
+### Fonksiyonlar
 | Erişim  | Tip  | İsim  | Açıklama  |
 | ------------ | ------------ | ------------ | ------------ |
 | protected | *void*  | **ekle**(*string* line)  | Dosyaya satır ekler. |
@@ -37,20 +37,20 @@ Projede kullandığım sınıfların değişkenleri ve fonksiyonların neler old
 | protected  | *void*  | **listele**(*string* *list)  | Satırları kaydeder ve sayar.  |
 | virtual protected | *string* | **ara**(*string* str) | Dosyada arama yapar ve kelimenin bulunduğu satırı döndürür. |
 
-##DeleteUpdate Sınıfı
+## DeleteUpdate Sınıfı
 |||
 | ------------ | ------------ |
-|  **Miras Aldığı Sınıflar: ** | Yok |
-| **Yapıcı Fonksiyonları: **  | Yok  |
-| **Yıkıcı Fonksiyonları: **   | Yok |
+|  **Miras Aldığı Sınıflar:** | Yok |
+| **Yapıcı Fonksiyonları:**  | Yok  |
+| **Yıkıcı Fonksiyonları:**   | Yok |
 
-###Değişkenler
+### Değişkenler
 |Erişim | Tip  | İsim | Açıklama  |
 |------------ | ------------ | ------------ | ------------ |
 | protected | *string*  | ***fileName***  | Veritabanı dosyasının adını saklar.  |
 | protected |  *string* | **tempFileName**  | Geçici dosyanın adını saklar.  |
 
-###Fonksiyonlar
+### Fonksiyonlar
 | Erişim  | Tip  | İsim  | Açıklama  |
 | ------------ | ------------ | ------------ | ------------ |
 | protected | *void*  | **sil**(*string* line)  | Dosyadan satır siler. |
@@ -58,15 +58,15 @@ Projede kullandığım sınıfların değişkenleri ve fonksiyonların neler old
 | protected  | *void*  | **guncelle**(*string* old_line, *string* new_line)  | Satırı günceller. |
 | protected  | *void*  | **guncelle**(*int* old_line_int, *string* new_line)  | Satır sayısına göre satırı günceller.  |
 
-##FileDb Sınıfı
+## FileDb Sınıfı
 
 |||
 | ------------ | ------------ |
-|  **Miras Aldığı Sınıflar: ** | AddListSearch, DeleteUpdate  |
-| **Yapıcı Fonksiyonları: **  | *FileDb*(*string* fileName, *string* * headlines,  *int* * length,  *int* size)  |
-| **Yıkıcı Fonksiyonları: **   | *~FileDb()*  |
+|  **Miras Aldığı Sınıflar:** | AddListSearch, DeleteUpdate  |
+| **Yapıcı Fonksiyonları:**  | *FileDb*(*string* fileName, *string* * headlines,  *int* * length,  *int* size)  |
+| **Yıkıcı Fonksiyonları:**   | *~FileDb()*  |
 
-###Değişkenler
+### Değişkenler
 |Erişim | Tip  | İsim | Açıklama  |
 |------------ | ------------ | ------------ | ------------ |
 | private | *string*  | ***fileName***  | Veritabanı dosyasının adını saklar.  |
@@ -82,7 +82,7 @@ Projede kullandığım sınıfların değişkenleri ve fonksiyonların neler old
 | public |  *CustomFilters*  * | **filter**  | Uygulanacak filtreleri tutar. |
 | public |  *int* | **filterCount**  | Uygulanacak filtre sayısını saklar.  |
 
-###Fonksiyonlar
+### Fonksiyonlar
 | Erişim  | Tip  | İsim  | Açıklama  |
 | ------------ | ------------ | ------------ | ------------ |
 | public | *void*  | **cacheFileContent**()  | Dosya satırlarını ve sayısını değişkene kaydeder. |
@@ -107,14 +107,14 @@ Projede kullandığım sınıfların değişkenleri ve fonksiyonların neler old
 | public | *void* | **yaz**()| Filtrelenmiş veriyi yazdırır.  |
 | public | *string* | **ara**(*string* str) | Dosyada arama yapar ve kelimenin bulunduğu satırı döndürür. |
 
-##CustomFilters Sınıfı
+## CustomFilters Sınıfı
 |||
 | ------------ | ------------ |
-|  **Miras Aldığı Sınıflar: ** | Yok |
-| **Yapıcı Fonksiyonları: **  | *CustomFilters*()  |
-| **Yıkıcı Fonksiyonları: **   | *~CustomFilters*() |
+|  **Miras Aldığı Sınıflar:** | Yok |
+| **Yapıcı Fonksiyonları:**  | *CustomFilters*()  |
+| **Yıkıcı Fonksiyonları:**   | *~CustomFilters*() |
 
-###Değişkenler
+### Değişkenler
 |Erişim | Tip  | İsim | Açıklama  |
 |------------ | ------------ | ------------ | ------------ |
 | private | *string*  | ***sectionInput***  | Filtrenin bulunduğu iterasyondaki bölüm içeriğini saklar.  |
@@ -133,7 +133,7 @@ Projede kullandığım sınıfların değişkenleri ve fonksiyonların neler old
 | public |  *string* * |  **preSuffix**   | Önad ve sonad değerlerini saklar.Verici tarafı değişkeni. |
 | public |  *stringstream * |  **ss**   | Kullanılacak akı değişkeni. |
 
-###Fonksiyonlar
+### Fonksiyonlar
 | Erişim  | Tip  | İsim  | Açıklama  |
 | ------------ | ------------ | ------------ | ------------ |
 | private | *void*  | **stringTrade**() | Filteyi uygular ve son çıktıyı oluşturur. |
