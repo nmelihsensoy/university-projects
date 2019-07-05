@@ -165,6 +165,14 @@ void traverse(node *h){
     traverse(h->next);
 }   
 
+void traverse_rev(node *h){
+    if(h == NULL){
+        return;
+    }
+    traverse_rev(h->next);
+    cout<<h->data<<", ";
+}
+
 void swap(node *a, node *b){
     node temp;
     temp.data = a->data;
@@ -214,9 +222,11 @@ int main(){
     insert_sorted(&head, &tail, 1);
 
     traverse(head);
-    reverse(&head, &tail);
+    traverse_rev(head);
+    cout<<endl<<endl;
     //swap(head, tail);
     //swap(head, head->next->next);
+    reverse(&head, &tail);
     traverse(head);
     return 0;
 }
