@@ -69,17 +69,16 @@ void printList(list* l){
     do{
         cout<<iter->data<<", ";
         iter = iter->next;
-    }while(iter != l->head);
+    }while(iter != l->tail->next);
     cout<<endl;
 }
 
-void printList2(list *l){
-    node *iter = l->head;
-    while(iter->next != l->head){
+void print_rev(list *l){
+    node *iter = l->tail;
+    do{
         cout<<iter->data<<", ";
-        iter = iter->next;
-    }
-    cout<<l->tail->data<<", ";
+        iter = iter->prev;
+    }while(iter != l->tail);
     cout<<endl;
 }
 
@@ -94,11 +93,12 @@ int main(){
     insert(l1, 90);
     insert(l1, 70);
     insert(l1, 30);
-    printList2(l1);
+    printList(l1);
+    print_rev(l1);
     remove(l1, 30);
     remove(l1, 15);
     remove(l1, 22);
-    printList2(l1);
-
+    printList(l1);
+    
     return 0;
 }
