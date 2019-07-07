@@ -5,6 +5,7 @@
 - [Tic Tac Toe(XOX) Game](/Others/XOX_Console) `C++` `Console`
 - [Snake Game](/Others/Snake_Console) `C++` `Console`
 - [Array Rotation](/Others/Array_Rotation) `C++` `Console`
+- [Array Reverse](/Others/Array_Reverse) `C++` `Console`
 
 ### [BMT101](/BMT101)
 - [Metric Conversion](/BMT101/Metric_Conversion) `C++` `Console`
