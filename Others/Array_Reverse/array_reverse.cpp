@@ -46,13 +46,19 @@ void reverse2(int *arr, int _size){
     }
 }
 
+void reverse3(int *arr, int _size){
+    for(int a=0, b=_size-1; a!=b; a++, b--){
+        swap(arr[a], arr[b]);
+    }
+}
+
 int main(){
 
     int arr[] = {5, 6, 7, 8, 9};
     int _size = 5;
 
     print_arr(arr, _size);
-    reverse2(arr, _size);
+    reverse3(arr, _size);
     reverse_rec(arr, 0, _size-1);
     print_arr(arr, _size);
 
