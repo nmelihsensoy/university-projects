@@ -29,7 +29,7 @@ queue *init(int s=10){
 }
 
 void enque(queue *q, int x){
-    if(q->cnt == 0) q->d = new int[q->_size];
+    if(q->d == NULL) q->d = new int[q->_size];
     if(q->cnt == q->_size) return;
     q->d[q->rear] = x;
     q->rear = (q->rear+1)%q->_size;
