@@ -73,6 +73,14 @@ void print_q(queue *q){
     cout<<endl;
 }
 
+void print_q2(queue *q){
+    for(int i=0; i<q->cnt; i++){
+        cout<<q->d[(i+q->front)%q->ssize]<<", ";
+    }
+    cout<<endl;
+}
+
+
 int main(){
 
     queue *q1 = init(4);
