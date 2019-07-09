@@ -83,20 +83,48 @@ btree *search2(btree *r, int x){
     return search2(r->left, x);
 }
 
+btree *del_leaf(btree *r, int x){
+    if(r == NULL) return r;
+    r->left = del_leaf(r->left, x);
+    r->right = del_leaf(r->right, x);
+    if(r->data == x && r->left == NULL && r->right == NULL){
+        free(r);
+        return NULL;
+    }
+    return r;
+}
+
+
+btree *del_leaf2(btree *r, int x){
+    if(r == NULL) return r;
+    if(r->data == x){
+        if(r->left == NULL && r->right == NULL){
+            free(r);
+            return NULL;
+        }
+    }else if(r->data < x) r->right = del_leaf2(r->right, x);
+    else r->left = del_leaf2(r->left, x);
+    return r;
+}
+
 int main(){
 
     btree *b1 = NULL;
     b1 = add(b1, 15);
+    add(b1, 16);
+    add(b1, 20);
     add(b1, 18);
-    add(b1, 30);
-    add(b1, 6);
-    add(b1, 3);
-    add(b1, 2);
-    add(b1, 4);
-    add(b1, 9);
-    add(b1, 7);
+    add(b1, 23);
+    add(b1, 5);
+    add(b1, 12);
     add(b1, 13);
-    add(b1, 14);
+    add(b1, 3);
+    add(b1, 10);
+    add(b1, 6);
+    add(b1, 7);
+    traverse_inorder(b1);
+    cout<<endl;
+    del_leaf2(b1, 13);
     traverse_inorder(b1);
     cout<<endl;
     cout<<"Count:"<<count(b1)<<" Min:"<<min(b1)->data<<" Max:"<<max(b1)->data<<endl;
