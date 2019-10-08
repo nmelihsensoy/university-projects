@@ -33,4 +33,11 @@
 - [Linked List](/BMT207/Linked_List) `C++` `Console`
 - [Stack](/BMT207/Stack) `C++` `Console`
 - [Queue](/BMT207/Queue) `C++` `Console`
-- [Trees](/BMT207/Trees) `C++` `Console`
+- [Binary Tree](/BMT207/Binary_Tree) `C++` `Console`
+- [Heap Tree](/BMT207/Heap_Tree) `C++` `Console`
+- [Searching](/BMT207/Searching) `C++` `Console`
+- [Assignment 1(Shunting Yard Algorithm)](/BMT207/Assignment_1) `Assignment` `C++` `Console` 
+- [Bubble&Selection&Insertion Sort](/BMT207/Bubble&Selection&Insertion_Sort) `C++` `Console`
+- [Quick Sort](/BMT207/Quick_Sort) `C++` `Console`
+- [Merge Sort](/BMT207/Merge_Sort) `C++` `Console`
+- [Counting&Radix Sort](/BMT207/Counting&Radix_Sort) `C++` `Console`
