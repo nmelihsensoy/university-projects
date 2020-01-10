@@ -13,6 +13,15 @@
 - [Mini-Max Sum](/Hackerrank/Problem_Solving/Warmup/mini-max_sum.cpp) `C++` `Console` `Warmup` `Easy` [`Hackerrank Link`](https://www.hackerrank.com/challenges/mini-max-sum) 
 - [Birthday Cake Candles](/Hackerrank/Problem_Solving/Warmup/birthday_cake_candles.cpp) `C++` `Console` `Warmup` `Easy` [`Hackerrank Link`](https://www.hackerrank.com/challenges/birthday-cake-candles) 
 - [Time Conversion](/Hackerrank/Problem_Solving/Warmup/time_conversion.cpp) `C++` `Console` `Warmup` `Easy` [`Hackerrank Link`](https://www.hackerrank.com/challenges/time-conversion) 
+- [Grading Students](/Hackerrank/Problem_Solving/Implementation/grading_students.cpp) `C++` `Console` `Implementation` `Easy` [`Hackerrank Link`](https://www.hackerrank.com/challenges/grading) 
+- [Apple and Orange](/Hackerrank/Problem_Solving/Implementation/apple_and_orange.cpp) `C++` `Console` `Implementation` `Easy` [`Hackerrank Link`](https://www.hackerrank.com/challenges/apple-and-orange) 
+- [Kangaroo](/Hackerrank/Problem_Solving/Implementation/kangaroo.cpp) `C++` `Console` `Implementation` `Easy` [`Hackerrank Link`](https://www.hackerrank.com/challenges/kangaroo) 
+- [Breaking the Records](/Hackerrank/Problem_Solving/Implementation/breaking_the_records.cpp) `C++` `Console` `Implementation` `Easy` [`Hackerrank Link`](https://www.hackerrank.com/challenges/breaking-best-and-worst-records) 
+- [Birthday Chocolate](/Hackerrank/Problem_Solving/Implementation/birthday_chocolate.cpp) `C++` `Console` `Implementation` `Easy` [`Hackerrank Link`](https://www.hackerrank.com/challenges/the-birthday-bar) 
+- [Divisible Sum Pairs](/Hackerrank/Problem_Solving/Implementation/divisible_sum_pairs.cpp) `C++` `Console` `Implementation` `Easy` [`Hackerrank Link`](https://www.hackerrank.com/challenges/divisible-sum-pairs) 
+- [Migratory Birds](/Hackerrank/Problem_Solving/Implementation/migratory_birds.cpp) `C++` `Console` `Implementation` `Easy` [`Hackerrank Link`](https://www.hackerrank.com/challenges/migratory-birds) 
+- [Counting Valleys](/Hackerrank/Problem_Solving/Implementation/counting_valleys.cpp) `C++` `Console` `Implementation` `Easy` [`Hackerrank Link`](https://www.hackerrank.com/challenges/counting-valleys) 
+- [Viral Advertising](/Hackerrank/Problem_Solving/Implementation/viral_advertising.cpp) `C++` `Console` `Implementation` `Easy` [`Hackerrank Link`](https://www.hackerrank.com/challenges/strange-advertising) 
 
 ### [OTHERS](/Others)
 - [2048 Game](/Others/2048_Console) `C++` `Console`
