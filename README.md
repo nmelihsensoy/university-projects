@@ -3,16 +3,16 @@
 ### [HACKERRANK](/Hackerrank)
 
 #### [Problem Solving](/Hackerrank)
-- [Solve Me First](/Hackerrank/Problem_Solving/Warmup/solve_me_first.cpp) `C++` `Console` `Warmup` `Easy` 
-- [Simple Array Sum](/Hackerrank/Problem_Solving/Warmup/simple_array_sum.cpp) `C++` `Console` `Warmup` `Easy` 
-- [Compare The Triplets](/Hackerrank/Problem_Solving/Warmup/compare_the_triplets.cpp) `C++` `Console` `Warmup` `Easy` 
-- [A Very Big Sum](/Hackerrank/Problem_Solving/Warmup/a_very_big_sum.cpp) `C++` `Console` `Warmup` `Easy` 
-- [Diagonal Difference](/Hackerrank/Problem_Solving/Warmup/diagonal_difference.cpp) `C++` `Console` `Warmup` `Easy` 
-- [Plus Minus](/Hackerrank/Problem_Solving/Warmup/plus_minus.cpp) `C++` `Console` `Warmup` `Easy` 
-- [Staircase](/Hackerrank/Problem_Solving/Warmup/staircase.cpp) `C++` `Console` `Warmup` `Easy` 
-- [Mini-Max Sum](/Hackerrank/Problem_Solving/Warmup/mini-max_sum.cpp) `C++` `Console` `Warmup` `Easy` 
-- [Birthday Cake Candles](/Hackerrank/Problem_Solving/Warmup/birthday_cake_candles.cpp) `C++` `Console` `Warmup` `Easy` 
-- [Time Conversion](/Hackerrank/Problem_Solving/Warmup/time_conversion.cpp) `C++` `Console` `Warmup` `Easy` 
+- [Solve Me First](/Hackerrank/Problem_Solving/Warmup/solve_me_first.cpp) `C++` `Console` `Warmup` `Easy` [`Hackerrank Link`](https://www.hackerrank.com/challenges/solve-me-first) 
+- [Simple Array Sum](/Hackerrank/Problem_Solving/Warmup/simple_array_sum.cpp) `C++` `Console` `Warmup` `Easy` [`Hackerrank Link`](https://www.hackerrank.com/challenges/simple-array-sum) 
+- [Compare The Triplets](/Hackerrank/Problem_Solving/Warmup/compare_the_triplets.cpp) `C++` `Console` `Warmup` `Easy` [`Hackerrank Link`](https://www.hackerrank.com/challenges/compare-the-triplets) 
+- [A Very Big Sum](/Hackerrank/Problem_Solving/Warmup/a_very_big_sum.cpp) `C++` `Console` `Warmup` `Easy` [`Hackerrank Link`](https://www.hackerrank.com/challenges/a-very-big-sum) 
+- [Diagonal Difference](/Hackerrank/Problem_Solving/Warmup/diagonal_difference.cpp) `C++` `Console` `Warmup` `Easy` [`Hackerrank Link`](https://www.hackerrank.com/challenges/diagonal-difference) 
+- [Plus Minus](/Hackerrank/Problem_Solving/Warmup/plus_minus.cpp) `C++` `Console` `Warmup` `Easy` [`Hackerrank Link`](https://www.hackerrank.com/challenges/plus-minus) 
+- [Staircase](/Hackerrank/Problem_Solving/Warmup/staircase.cpp) `C++` `Console` `Warmup` `Easy` [`Hackerrank Link`](https://www.hackerrank.com/challenges/staircase) 
+- [Mini-Max Sum](/Hackerrank/Problem_Solving/Warmup/mini-max_sum.cpp) `C++` `Console` `Warmup` `Easy` [`Hackerrank Link`](https://www.hackerrank.com/challenges/mini-max-sum) 
+- [Birthday Cake Candles](/Hackerrank/Problem_Solving/Warmup/birthday_cake_candles.cpp) `C++` `Console` `Warmup` `Easy` [`Hackerrank Link`](https://www.hackerrank.com/challenges/birthday-cake-candles) 
+- [Time Conversion](/Hackerrank/Problem_Solving/Warmup/time_conversion.cpp) `C++` `Console` `Warmup` `Easy` [`Hackerrank Link`](https://www.hackerrank.com/challenges/time-conversion) 
 
 ### [OTHERS](/Others)
 - [2048 Game](/Others/2048_Console) `C++` `Console`
