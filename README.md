@@ -77,3 +77,7 @@
 - [RIPv2 Excercize](/E035/L5A.pdf) `LAB` `PDF`
 - [OSPF](/E035/L6.pdf) `LAB` `PDF`
 - [OSPF 2](/E035/L7.pdf) `LAB` `PDF`
+
+### [E018](/E018)
+- [SQL Tasks](/E018/SQL_Tasks)
+- [Car Sharing App](/E018/Car_Sharing) `Project`
