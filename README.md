@@ -67,3 +67,13 @@
 - [Quick Sort](/BMT207/Quick_Sort) `C++` `Console`
 - [Merge Sort](/BMT207/Merge_Sort) `C++` `Console`
 - [Counting&Radix Sort](/BMT207/Counting&Radix_Sort) `C++` `Console`
+
+### [E035](/E035)
+- [Cisco Router Basics](/E035/L1.pdf) `LAB` `PDF`
+- [Cisco Router Configuration](/E035/L2.pdf) `LAB` `PDF`
+- [Static Routes](/E035/L3.pdf) `LAB` `PDF`
+- [DHCP + IPv6 Basics](/E035/L4.pdf) `LAB` `PDF`
+- [RIPv2 and RIPng](/E035/L5.pdf) `LAB` `PDF`
+- [RIPv2 Excercize](/E035/L5A.pdf) `LAB` `PDF`
+- [OSPF](/E035/L6.pdf) `LAB` `PDF`
+- [OSPF 2](/E035/L7.pdf) `LAB` `PDF`
