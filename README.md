@@ -22,6 +22,9 @@
 - [Migratory Birds](/Hackerrank/Problem_Solving/Implementation/migratory_birds.cpp) `C++` `Console` `Implementation` `Easy` [`Hackerrank Link`](https://www.hackerrank.com/challenges/migratory-birds) 
 - [Counting Valleys](/Hackerrank/Problem_Solving/Implementation/counting_valleys.cpp) `C++` `Console` `Implementation` `Easy` [`Hackerrank Link`](https://www.hackerrank.com/challenges/counting-valleys) 
 - [Viral Advertising](/Hackerrank/Problem_Solving/Implementation/viral_advertising.cpp) `C++` `Console` `Implementation` `Easy` [`Hackerrank Link`](https://www.hackerrank.com/challenges/strange-advertising) 
+- [Bon Appetit](/Hackerrank/Problem_Solving/Implementation/bon_appetit.cpp) `C++` `Console` `Implementation` `Easy` [`Hackerrank Link`](https://www.hackerrank.com/challenges/bon-appetit/problem) 
+- [Drawing Book](/Hackerrank/Problem_Solving/Implementation/drawing_book.cpp) `C++` `Console` `Implementation` `Easy` [`Hackerrank Link`](https://www.hackerrank.com/challenges/drawing-book/problem) 
+- [Sock Merchant](/Hackerrank/Problem_Solving/Implementation/sock_merchant.cpp) `C++` `Console` `Implementation` `Easy` [`Hackerrank Link`](https://www.hackerrank.com/challenges/sock-merchant/problem) 
 
 ### [OTHERS](/Others)
 - [2048 Game](/Others/2048_Console) `C++` `Console`
