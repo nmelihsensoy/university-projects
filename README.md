@@ -81,3 +81,15 @@
 ### [E018](/E018)
 - [SQL Tasks](/E018/SQL_Tasks)
 - [Car Sharing App](/E018/Car_Sharing) `Project`
+
+### [BMT203](https://github.com/nmelihsensoy/csharp-nyp-notlari)
+- [C# Object Oriented Programming](https://github.com/nmelihsensoy/csharp-nyp-notlari) `Exam` `Turkish`
+
+### [BMT335](/BMT335)
+- [Draw Colored Diagonals](/BMT335/Colored_Diagonals) `Quiz` `MATLAB`
+- [Thresholding](/BMT335/Thresholding) `Quiz` `MATLAB`
+- [Basic Image Processing Operations](/BMT335/Basic_Operations) `Exam` `MATLAB`
+- [File size and PPI calculation](/BMT335/Size_And_PPI) `Exam` `MATLAB`
+- [Convolution](/BMT335/Convolution) `Exam` `MATLAB`
+
+
