@@ -108,3 +108,7 @@
 ### [BMT303](:target="_blank")
 
 - [lbry. Library Management System](https://github.com/nmelihsensoy/LbryDot) `Project` `C#` `GUI`
+
+### [BM472](:target="_blank")
+
+- [DNS lookup tool](https://github.com/nmelihsensoy/my-nslookup) `Project` `C#` `Console`
